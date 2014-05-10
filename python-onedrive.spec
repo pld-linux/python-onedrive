@@ -1,12 +1,12 @@
 %define		pypi_name	onedrive
 Summary:	Python and command-line interface for Microsoft LiveConnect OneDrive REST API v5.0
 Name:		python-%{pypi_name}
-Version:	14.04.3
+Version:	14.04.0
 Release:	1
 License:	WTFPL
 Group:		Libraries/Python
-Source0:	https://pypi.python.org/packages/source/p/python-onedrive/%{name}-%{version}.tar.gz
-# Source0-md5:	2da74c0fe68452bc84dd050617a33b3e
+Source0:	https://github.com/mk-fg/python-onedrive/archive/v%{version}/python-skydrive-%{version}.tar.gz
+# Source0-md5:	c53d7e380816e5b198ddb46e8956d5d4
 URL:		https://github.com/mk-fg/python-onedrive
 BuildRequires:	python-devel
 Suggests:	python-PyYAML
@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.txt
-%attr(755,root,root) %{_bindir}/onedrive-cli
-%{py_sitescriptdir}/onedrive
-%{py_sitescriptdir}/python_onedrive-%{version}-py*.egg-info
+%doc README.md
+%attr(755,root,root) %{_bindir}/skydrive-cli
+%{py_sitescriptdir}/skydrive
+%{py_sitescriptdir}/python_skydrive-%{version}-py*.egg-info
