@@ -9,6 +9,9 @@ Source0:	https://pypi.python.org/packages/source/p/python-onedrive/%{name}-%{ver
 # Source0-md5:	2da74c0fe68452bc84dd050617a33b3e
 URL:		https://github.com/mk-fg/python-onedrive
 BuildRequires:	python-devel
+Suggests:	python-PyYAML
+Suggests:	python-chardet
+Suggests:	python-requests >= 0.14.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
