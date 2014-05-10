@@ -12,6 +12,7 @@ BuildRequires:	python-devel
 Suggests:	python-PyYAML
 Suggests:	python-chardet
 Suggests:	python-requests >= 0.14.0
+Obsoletes:	python-skydrive < 14.04.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
