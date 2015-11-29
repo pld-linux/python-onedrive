@@ -8,6 +8,7 @@ Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/p/python-onedrive/%{name}-%{version}.tar.gz
 # Source0-md5:	2da74c0fe68452bc84dd050617a33b3e
 URL:		https://github.com/mk-fg/python-onedrive
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-devel
 Suggests:	python-PyYAML
 Suggests:	python-chardet
